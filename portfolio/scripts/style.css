@@ -1,0 +1,100 @@
+.FlexContainerGeneric{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.FlexContainerCentered{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.sectionContainer{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.sectionContainer hr{
+    border-color: rgb(227, 227, 227);
+    height: 0px;
+}
+.sectionWhite{
+    background-color: white;
+    text-align: left;
+}
+.sectionWhite p{
+    color: black
+}
+.sectionWhite h1{
+    font-size: 40px;
+    color: black
+}
+
+
+.sectionGray{
+    background-color: rgb(223, 241, 246);
+    text-align: left;
+}
+.sectionGray p{
+    color: black
+}
+.sectionGray h1{
+    font-size: 40px;
+    color: black
+}
+
+
+.bearwithme{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    height: 500px; /* set to image res*/
+    background-image: url("../assets/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bearwithme h1 {
+    padding-top: 200px; /* adjust according to png */
+    text-shadow: 1px 1px 0px black;
+    font-size: 40px;
+}
+.bearwithme h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.ProjectBox{
+    box-shadow: 0 0 10px rgb(153, 153, 153);
+    transition: box-shadow 0.6s ease;
+    margin: 4px;
+    padding: 20px;
+    width: 450px;
+    height: 400px;
+    background-color: #f1f1f2;
+    color: #000000;
+    text-align: center;
+    font-size: large;
+    position:relative;
+    border-radius: 10px;
+}
+.ProjectBox:hover{
+    box-shadow: 0 0 15px rgb(93, 93, 93);
+}
+.ProjectBoxText{
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.ProjectBoxImage{
+    max-width: auto;
+    height: 300px;
+}
+.ProjectBoxHint{
+    text-align: center;
+    color:rgb(164, 164, 164);
+}
