@@ -1,3 +1,8 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .FlexContainerGeneric{
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +14,7 @@
     justify-content: center; 
     flex-wrap: wrap;
     gap: 16px;
+    place-items: center;
 }
 
 
@@ -49,11 +55,12 @@
 
 
 .bearwithme{
+    margin-top: 0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     height: 500px; /* set to image res*/
-    background-image: url("../assets/bg.png");
+    background-image: url("../assets/bg2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,10 +69,12 @@
     padding-top: 200px; /* adjust according to png */
     text-shadow: 1px 1px 0px black;
     font-size: 40px;
+    margin-top: 0;
 }
 .bearwithme h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+    margin-top: 0;
 }
 
 .ProjectBox{
@@ -84,6 +93,7 @@
 }
 .ProjectBox:hover{
     box-shadow: 0 0 15px rgb(93, 93, 93);
+    cursor: pointer;
 }
 .ProjectBoxText{
     padding-top: 5px;
@@ -97,4 +107,29 @@
 .ProjectBoxHint{
     text-align: center;
     color:rgb(164, 164, 164);
+}
+
+
+.DescriptionBox {
+    margin: 4px;
+    padding: 20px;
+    background-color: #f1f1f2;
+    color: #000000;
+    text-align: center;
+    font-size: large;
+    position:relative;
+    border-radius: 10px;
+    display: flex;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transform-origin: center;
+}
+
+.DescriptionBox.show {
+    transition: height 0.4s ease, width 0.4s ease;
+    width: 400px;
+    height: 200px; 
+    visibility: visible;
 }
