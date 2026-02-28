@@ -17,8 +17,53 @@ html, body {
     place-items: center;
 }
 
+.ProfilePictureContainer{
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid rgba(171, 171, 171, 0.3);
+    overflow: hidden;
+}
+
+.ProfilePictureContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bearwithme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    color: black;
+    height: 500px; /* set to image res*/
+    background-image: url("../assets/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bearwithme h1 {
+    padding-top: 10px;
+    text-shadow: 1px 1px 0px black;
+    font-size: 40px;
+    margin-top: 0;
+}
+.bearwithme h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.paddingwrapper {
+    padding-top: 100px;
+}
 
 .sectionContainer{
+    font-family: 'Archivo', sans-serif;
     padding-top: 5vw;
     padding-bottom: 5vw;
     padding-left: 10vw;
@@ -29,20 +74,20 @@ html, body {
     height: 0px;
 }
 .sectionWhite{
-    background-color: white;
+    background-color: #ffffff;
     text-align: left;
 }
 .sectionWhite p{
-    color: black
+    color: #444854
 }
 .sectionWhite h1{
     font-size: 40px;
-    color: black
+    color: #444854
 }
 
 
 .sectionGray{
-    background-color: rgb(223, 241, 246);
+    background-color: #f2f2f7;
     text-align: left;
 }
 .sectionGray p{
@@ -54,28 +99,6 @@ html, body {
 }
 
 
-.bearwithme{
-    margin-top: 0;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    height: 500px; /* set to image res*/
-    background-image: url("../assets/bg2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.bearwithme h1 {
-    padding-top: 200px; /* adjust according to png */
-    text-shadow: 1px 1px 0px black;
-    font-size: 40px;
-    margin-top: 0;
-}
-.bearwithme h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    margin-top: 0;
-}
 
 .ProjectBox{
     box-shadow: 0 0 10px rgb(153, 153, 153);
@@ -84,7 +107,7 @@ html, body {
     padding: 20px;
     width: 450px;
     height: 400px;
-    background-color: #f1f1f2;
+    background-color: #ffffff;
     color: #000000;
     text-align: center;
     font-size: large;
@@ -113,8 +136,8 @@ html, body {
 .DescriptionBox {
     margin: 4px;
     padding: 20px;
-    background-color: #f1f1f2;
-    color: #000000;
+    background-color: #4c4c4c;
+    color: #ffffff;
     text-align: center;
     font-size: large;
     position:relative;
@@ -132,4 +155,11 @@ html, body {
     width: 400px;
     height: 200px; 
     visibility: visible;
+}
+
+.DescriptionBox.show p {
+    color:#ffffff;
+}
+.DescriptionBox.show h1 {
+    color: #ffffff;
 }
