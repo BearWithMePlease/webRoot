@@ -5,7 +5,7 @@ document.getElementById("crab").addEventListener("click", displayCrab);
 
 function displayLorem() {
     target = document.getElementById("descbox");
-    document.getElementById("prjdescription").innerHTML = "<h1> test </h1> <p> subtext </p>";
+    document.getElementById("prjdescription").innerHTML = "<h1> Lorem Scriptum Compiler </h1> <p> An Esolang that is based on Latin. All types are in latin, numbers are roman numerals (from -3999 to +3999), control structures via unicodes and an error handler. Codegen via LLVM! </p>";
     
     target.classList.remove("show");  
     void target.offsetWidth; //sketchy way to reset css
