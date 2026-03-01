@@ -195,12 +195,10 @@ function exportButtonStates() {
     const blob = new Blob([jsonStates], { type: 'application/json' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'buttonStates.json'; // Set the file name
+    link.download = 'buttonStates.json';
 
-    // Programmatically click the link to trigger the download
     link.click();
 
-    // Clean up the URL object
     URL.revokeObjectURL(link.href);
 
 }
