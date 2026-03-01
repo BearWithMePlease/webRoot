@@ -63,7 +63,7 @@ a{
     margin-top: 0;
 }
 .bearwithme h2 {
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     font-size: 20px;
     margin-top: 0;
 }
@@ -88,10 +88,11 @@ a{
     text-align: left;
 }
 .sectionWhite p{
+    font-size: 23px;
     color: #d1d2d3
 }
 .sectionWhite h1{
-    font-size: 40px;
+    font-size: 50px;
     color: #d1d2d3
 }
 
@@ -116,7 +117,7 @@ a{
     margin: 4px;
     padding: 20px;
     width: 450px;
-    height: 400px;
+    height: 450px;
     background-color: #f7f7f7;
     color: #000000;
     text-align: center;
@@ -135,12 +136,12 @@ a{
 }
 
 .ProjectBoxText h1{
-    font-size: medium;
+    font-size: 30px;
     color:#000000;
 }
 
 .ProjectBoxText p{
-    font-size: medium;
+    font-size: 22px;
     color:#000000;
 }
 
@@ -171,19 +172,24 @@ a{
     display: flex;
     height: 0;
     width: 0;
+    max-height: 0;
+    max-width: 0;
     overflow: hidden;
     visibility: hidden;
     transform-origin: center;
 }
 
 .DescriptionBox.show {
-    transition: height 0.4s ease, width 0.4s ease;
-    width: 400px;
-    height: 200px; 
+    transition: max-height 0.4s ease, max-width 0.4s ease;
+    width: auto;
+    height: auto; 
+    max-height: 1000px;
+    max-width: 1500px;
     visibility: visible;
 }
 
 .DescriptionBox.show p {
+    font-size: 25px;
     color:#ffffff;
 }
 .DescriptionBox.show h1 {
